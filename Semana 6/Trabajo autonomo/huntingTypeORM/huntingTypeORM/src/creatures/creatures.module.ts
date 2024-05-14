@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
 import { CreaturesService } from './creatures.service';
 import { CreaturesController } from './creatures.controller';
-import { PrismaModule } from 'src/prisma/prisma.module';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { CreatureEntity } from './entities/creature.entity';
 
 @Module({
   controllers: [CreaturesController],
-  providers: [CreaturesService, PrismaService],
-  imports: [PrismaModule],
+  providers: [CreaturesService],
+  imports: [TypeOrmModule.forFeature([CreatureEntity])]
 })
 export class CreaturesModule {}
