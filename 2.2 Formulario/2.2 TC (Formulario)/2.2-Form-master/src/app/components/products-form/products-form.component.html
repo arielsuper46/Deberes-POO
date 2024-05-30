@@ -1,0 +1,35 @@
+<h1>Products</h1>
+
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired>First Name</nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <input nz-input formControlName="productName" placeholder="Chocolate" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired>Last Name</nz-form-label>
+      <nz-form-control [nzSpan]="12">
+        <input nz-input formControlName="description" placeholder="description" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>Hire Date</nz-form-label>
+      <nz-form-control [nzSm]="16" [nzXs]="24">
+        <nz-date-picker formControlName="expDate"></nz-date-picker>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSpan]="7" nzRequired>Salary</nz-form-label>
+      <nz-form-control [nzSpan]="12">
+  <nz-input-number formControlName="price" [nzMin]="0" [nzMax]="100000" [nzStep]="100"></nz-input-number>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control [nzXs]="{ span: 24, offset: 0 }" [nzSm]="{ span: 16, offset: 8 }">
+        <button nz-button nzType="primary">Submit</button>
+      </nz-form-control>
+    </nz-form-item>
+  
+  </form>
+  
