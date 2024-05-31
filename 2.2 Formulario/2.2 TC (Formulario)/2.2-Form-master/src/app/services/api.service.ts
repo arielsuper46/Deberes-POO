@@ -14,9 +14,6 @@ import {Observable} from "rxjs";
 create<T>(item: T): Observable<T> {
     return this.http.post<T>(`${this.url}/employees`, item);
 }
-create<T>(item: T): Observable<T> {
-  return this.http.post<T>(`${this.url}/products`, item);
-}
 
 }
 
