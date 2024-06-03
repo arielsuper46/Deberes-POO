@@ -1,0 +1,17 @@
+GradeSchool:
+Esta clase GradeSchool gestiona un registro de estudiantes por grados. 
+Roster devuelve una copia profunda de los datos del registro para evitar modificaciones externas. 
+Add agrega un estudiante a un grado específico, asegurándose de eliminarlo de cualquier otro grado en el que estuviera previamente.
+Grade devuelve una copia de la lista de estudiantes de un grado específico, o una lista vacía si no hay estudiantes en ese grado.
+
+RobotName:
+Esta clase Robot gestiona nombres únicos para robots. Al crear un robot, se le asigna un nombre único generado aleatoriamente. Name devuelve el nombre del robot, generando uno nuevo si es necesario. ResetName borra el nombre actual del robot, forzando la generación de un nuevo nombre la próxima vez que se solicite. Los nombres únicos se almacenan en un conjunto estático usedNames para garantizar que no se repitan. ReleaseNames limpia este conjunto, permitiendo la reutilización de nombres.
+
+
+
+
+
+
+
+
+
