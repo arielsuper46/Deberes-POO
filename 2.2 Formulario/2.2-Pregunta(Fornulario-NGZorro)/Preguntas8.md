@@ -13,6 +13,7 @@ B. ¿Quizá esto marco de trabajo se usa junto con NGZorro?
 2) React
 3) Angular
 Respuesta: 2) Angular
+
 C. ¿Tal vez esta otro lenguaje están escritos los componentes de NGZorro?
 
 1) Java
