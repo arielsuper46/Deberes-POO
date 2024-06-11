@@ -1,0 +1,13 @@
+<h1>RANDOM JOKES🤣</h1>
+<p>{{randomJokes.setup}}</p>
+<p>{{randomJokes.delivery}}</p>
+<button class="button1" style="color: white;" (click)="getRandomJokes()" >Tell Me a Joke!</button>
+
+<ul>
+        <h2>Categories</h2>
+        <li *ngFor="let joke of jokesCategories?.categories" class="joke">{{joke}}</li><br>
+        <h2>Flags</h2>
+        <li *ngFor="let joke of jokesCategories?.flags" class="flags">{{joke}}</li>
+</ul>
+
+
