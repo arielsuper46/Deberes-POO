@@ -1,0 +1,43 @@
+<h1>Crear Aparato LG</h1>
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitProductForm()">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Modelo</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="model" placeholder="Ingrese el modelo" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7">Descripción</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input
+        nz-input
+        formControlName="description"
+        placeholder="Ingrese la descripción"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Características</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input
+        nz-input
+        formControlName="features"
+        placeholder="Ingrese las características"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Precio</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <nz-input-number formControlName="price" [nzMin]="0"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control
+      [nzXs]="{ span: 24, offset: 0 }"
+      [nzSm]="{ span: 16, offset: 8 }"
+    >
+      <button nz-button nzType="primary">Enviar</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
