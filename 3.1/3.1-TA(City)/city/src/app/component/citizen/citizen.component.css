@@ -1,0 +1,22 @@
+
+.citizen-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.citizen-item {
+    border: 1px solid #ccc;
+    border-right: none;
+    border-bottom: none;
+    padding: 20px;
+    text-align: center;
+}
+.citizen-item:nth-child(4n) {
+    border-right: 1px solid #ccc;
+}
+.citizen-item:nth-last-child(-n+4) {
+    border-bottom: 1px solid #ccc;
+}
